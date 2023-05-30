@@ -4,6 +4,7 @@ from pygame.locals import *
 from OpenGL.GL import *
 from OpenGL.GLU import *
 
+# change shape here
 verticies = (
     (1, -1, -1),
     (1, 1, -1),
@@ -29,7 +30,6 @@ edges = (
     (5,4),
     (5,7)
     )
-
 
 def Cube():
     glBegin(GL_LINES)
@@ -58,7 +58,7 @@ def main():
         glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT)
         Cube()
         pygame.display.flip()
-        pygame.time.wait(10)
+        pygame.time.wait(10) # change time it takes to spin
 
 
 main()
